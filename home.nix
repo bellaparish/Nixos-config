@@ -7,8 +7,8 @@
   home.homeDirectory = "/home/bella";
   programs.git = {
     enable = true;
-    userName = "Bella";
-    userEmail = "bellaparish05@gmail.com";
+    settings.user.name = "Bella";
+    settings.user.email = "bellaparish05@gmail.com";
   };
   home.stateVersion = "26.05";
   programs.bash = {
