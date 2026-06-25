@@ -26,6 +26,8 @@
   # Enable CUPS to print documents.
    services.printing.enable = true;
 
+  programs.fish.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.bella = {
     isNormalUser = true;
@@ -33,6 +35,7 @@
     packages = with pkgs; [
       tree
     ];
+    shell = pkgs.fish;
   };
 
   programs.firefox.enable = true;
@@ -48,8 +51,9 @@
      fastfetch
      waybar
      hyprpaper 
-     wofi 
+     wofi
  ];
+
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
