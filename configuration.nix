@@ -23,10 +23,8 @@
 	xwayland.enable = true;
   };
 
-  kdePackages.plasma-desktop = {
-	enable = true;
-  };
-
+  desktopManager.plasma6.enable = true;
+   
   services.displayManager.ly.enable = true;
 
   # Enable CUPS to print documents.
