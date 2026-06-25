@@ -23,7 +23,7 @@
 	xwayland.enable = true;
   };
 
-  programs.plasma-desktop = {
+  kdePackages.plasma-desktop = {
 	enable = true;
   };
 
