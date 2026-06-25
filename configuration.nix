@@ -23,6 +23,10 @@
 	xwayland.enable = true;
   };
 
+  programs.plasma-desktop = {
+	enable = true;
+  };
+
   services.displayManager.ly.enable = true;
 
   # Enable CUPS to print documents.
