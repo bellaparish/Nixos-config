@@ -52,6 +52,8 @@
      waybar
      hyprpaper 
      wofi
+     brightnessctl
+     swaynotificationcenter
  ];
 
 
