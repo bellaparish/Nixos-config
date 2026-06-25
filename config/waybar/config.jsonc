@@ -14,9 +14,9 @@
     ],
     "modules-right": [
         "power-profiles-daemon",
-        "battery",
-        "clock",
-        "tray"
+        "tray",
+	"battery",
+        "clock"
     ],
     "hyprland/workspaces": {
 	"format": "{name}",
