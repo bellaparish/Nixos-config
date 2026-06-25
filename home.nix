@@ -15,7 +15,6 @@
     enable = true;
     shellAliases = {
 	btw = "echo i use nixos btw";
-	ls = "ls -la";
 	".." = "cd ..";
   };
     interactiveShellInit = ''
