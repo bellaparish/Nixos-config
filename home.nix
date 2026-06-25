@@ -16,7 +16,7 @@
     shellAliases = {
 	btw = "echo i use nixos btw";
 	ls = "ls -la";
-	.. = "cd ..";
+	".." = "cd ..";
   };
     interactiveShellInit = ''
 	set fish_greeting # Disable greeting

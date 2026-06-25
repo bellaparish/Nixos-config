@@ -1,39 +1,29 @@
 warning: Git tree '/home/bella/Nixos-config' is dirty
 building the system configuration...
 warning: Git tree '/home/bella/Nixos-config' is dirty
-error:
-       … while calling the 'head' builtin
-         at «github:NixOS/nixpkgs/e8210c649915deed7080033cdbabcc19e40bb899?narHash=sha256-0sOb6OIaD/K1zHxBhpmlKvkADfe0n8%2Bl4Jj2e1Q0r3w%3D»/lib/attrsets.nix:1712:13:
-         1711|           if length values == 1 || pred here (elemAt values 1) (head values) then
-         1712|             head values
-             |             ^
-         1713|           else
-
-       … while evaluating the attribute 'value'
-         at «github:NixOS/nixpkgs/e8210c649915deed7080033cdbabcc19e40bb899?narHash=sha256-0sOb6OIaD/K1zHxBhpmlKvkADfe0n8%2Bl4Jj2e1Q0r3w%3D»/lib/modules.nix:1167:7:
-         1166|     // {
-         1167|       value = addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |       ^
-         1168|       inherit (res.defsFinal') highestPrio;
-
-       … while evaluating the option `system.build.toplevel':
-
-       … while evaluating definitions from `/nix/store/zny1nwmq6v9bkmjgpqrgngy7n7653mfh-source/nixos/modules/system/activation/top-level.nix':
-
-       … while evaluating the option `assertions':
-
-       … while evaluating definitions from `/nix/store/gmspkbrpghnlal7rjsbbvb9cb2zzzw07-source/nixos/common.nix':
-
-       … while evaluating the option `home-manager.users':
-
-       … while evaluating definitions from `/nix/store/zny1nwmq6v9bkmjgpqrgngy7n7653mfh-source/flake.nix':
-
-       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
-
-       error: syntax error, unexpected '.', expecting 'inherit'
-       at /home/bella/Nixos-config/home.nix:19:2:
-           18|   ls = "ls -la";
-           19|    .. = "cd ..";
-             |  ^
-           20|   };
-Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '/home/bella/Nixos-config#nixosConfigurations."Thinkpadt480s".config.system.build.toplevel' --no-link' returned non-zero exit status 1.
+these 8 derivations will be built:
+  /nix/store/2gq8yaiw4nndmj1jidk7sz7vqfjj3qrq-config.fish.drv
+  /nix/store/10l43rj949y7726sjlgp1al2fdfg060l-home-manager-files.drv
+  /nix/store/njn8x1awkpdq0f50f22iql2g3q2nd5gq-home-manager-generation.drv
+  /nix/store/7s7r4x05y14pg052bla8vn1ckbqjw5c3-unit-home-manager-bella.service.drv
+  /nix/store/y42s4zhxil3ihbmb97180jwv26z6z6p8-system-units.drv
+  /nix/store/yywq8085ikgqy4bmkx87wpv4sqgqg3ql-etc.drv
+  /nix/store/1hvjf3vi55r8f685v8f539y25lp35kqr-activate.drv
+  /nix/store/3ik69dak8m8gm6xm7rpn5a1bs3zv25zn-nixos-system-Thinkpadt480s-26.05.20260618.e8210c6.drv
+building '/nix/store/2gq8yaiw4nndmj1jidk7sz7vqfjj3qrq-config.fish.drv'...
+building '/nix/store/10l43rj949y7726sjlgp1al2fdfg060l-home-manager-files.drv'...
+building '/nix/store/njn8x1awkpdq0f50f22iql2g3q2nd5gq-home-manager-generation.drv'...
+building '/nix/store/7s7r4x05y14pg052bla8vn1ckbqjw5c3-unit-home-manager-bella.service.drv'...
+building '/nix/store/y42s4zhxil3ihbmb97180jwv26z6z6p8-system-units.drv'...
+building '/nix/store/yywq8085ikgqy4bmkx87wpv4sqgqg3ql-etc.drv'...
+building '/nix/store/1hvjf3vi55r8f685v8f539y25lp35kqr-activate.drv'...
+building '/nix/store/3ik69dak8m8gm6xm7rpn5a1bs3zv25zn-nixos-system-Thinkpadt480s-26.05.20260618.e8210c6.drv'...
+Checking switch inhibitors... done
+activating the configuration...
+setting up /etc...
+reloading user units for bella...
+restarting the following user units: nixos-activation.service
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-bella.service
+the following new units were started: mandb.service, NetworkManager-dispatcher.service
+Done. The new configuration is /nix/store/mzq7g71366dqzrqfzgq4awdqb3icb02n-nixos-system-Thinkpadt480s-26.05.20260618.e8210c6
