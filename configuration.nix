@@ -23,7 +23,9 @@
 	xwayland.enable = true;
   };
 
-  desktopManager.plasma6.enable = true;
+  services = {
+    desktopManager.plasma6.enable = true;
+  };
    
   services.displayManager.ly.enable = true;
 
