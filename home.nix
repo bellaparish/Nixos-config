@@ -13,6 +13,11 @@
   home.stateVersion = "26.05";
   programs.fish = {
     enable = true;
+    shellAliases = {
+	btw = "echo i use nixos btw";
+	ls = "ls -la";
+	.. = "cd ..";
+  };
     interactiveShellInit = ''
 	set fish_greeting # Disable greeting
   '';
