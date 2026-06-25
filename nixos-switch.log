@@ -1,27 +1,38 @@
 warning: Git tree '/home/bella/Nixos-config' is dirty
 building the system configuration...
 warning: Git tree '/home/bella/Nixos-config' is dirty
-these 7 derivations will be built:
-  /nix/store/f15lddmbss5sc765gib7pdvbgvr5xg8a-home-manager-files.drv
-  /nix/store/xjdb4s4b7whasb47yrvp7hcr3x4c8wq3-home-manager-generation.drv
-  /nix/store/s0a7zwp1m466q55m4vnf89fy86ygj405-unit-home-manager-bella.service.drv
-  /nix/store/dywgny0y0zp0fqir6d1n5jkjk4rz9rkn-system-units.drv
-  /nix/store/wz03zvwk9mf428y8d7sb2sskvaf432ac-etc.drv
-  /nix/store/5k0cyq02pzk26i7lhgk5lcd4i3qr3h2a-activate.drv
-  /nix/store/4mvwydgrd6haz8w0jhw9jvis1gc4sr3m-nixos-system-Thinkpadt480s-26.05.20260618.e8210c6.drv
-building '/nix/store/f15lddmbss5sc765gib7pdvbgvr5xg8a-home-manager-files.drv'...
-building '/nix/store/xjdb4s4b7whasb47yrvp7hcr3x4c8wq3-home-manager-generation.drv'...
-building '/nix/store/s0a7zwp1m466q55m4vnf89fy86ygj405-unit-home-manager-bella.service.drv'...
-building '/nix/store/dywgny0y0zp0fqir6d1n5jkjk4rz9rkn-system-units.drv'...
-building '/nix/store/wz03zvwk9mf428y8d7sb2sskvaf432ac-etc.drv'...
-building '/nix/store/5k0cyq02pzk26i7lhgk5lcd4i3qr3h2a-activate.drv'...
-building '/nix/store/4mvwydgrd6haz8w0jhw9jvis1gc4sr3m-nixos-system-Thinkpadt480s-26.05.20260618.e8210c6.drv'...
-Checking switch inhibitors... done
-activating the configuration...
-setting up /etc...
-reloading user units for bella...
-restarting the following user units: nixos-activation.service
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-bella.service
-the following new units were started: mandb.service, NetworkManager-dispatcher.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
-Done. The new configuration is /nix/store/mdq4jqbxsr9asx6mv56x88qjsn4k094b-nixos-system-Thinkpadt480s-26.05.20260618.e8210c6
+error:
+       … while calling the 'head' builtin
+         at «github:NixOS/nixpkgs/e8210c649915deed7080033cdbabcc19e40bb899?narHash=sha256-0sOb6OIaD/K1zHxBhpmlKvkADfe0n8%2Bl4Jj2e1Q0r3w%3D»/lib/attrsets.nix:1712:13:
+         1711|           if length values == 1 || pred here (elemAt values 1) (head values) then
+         1712|             head values
+             |             ^
+         1713|           else
+
+       … while evaluating the attribute 'value'
+         at «github:NixOS/nixpkgs/e8210c649915deed7080033cdbabcc19e40bb899?narHash=sha256-0sOb6OIaD/K1zHxBhpmlKvkADfe0n8%2Bl4Jj2e1Q0r3w%3D»/lib/modules.nix:1167:7:
+         1166|     // {
+         1167|       value = addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |       ^
+         1168|       inherit (res.defsFinal') highestPrio;
+
+       … while evaluating the option `system.build.toplevel':
+
+       … while evaluating definitions from `/nix/store/zny1nwmq6v9bkmjgpqrgngy7n7653mfh-source/nixos/modules/system/activation/top-level.nix':
+
+       … while evaluating the option `warnings':
+
+       … while evaluating definitions from `/nix/store/zny1nwmq6v9bkmjgpqrgngy7n7653mfh-source/nixos/modules/system/boot/systemd.nix':
+
+       … while evaluating the option `systemd.services.home-manager-bella.serviceConfig':
+
+       … while evaluating definitions from `/nix/store/gmspkbrpghnlal7rjsbbvb9cb2zzzw07-source/nixos':
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Path 'config/kitty' in the repository "/home/bella/Nixos-config" is not tracked by Git.
+
+       To make it visible to Nix, run:
+
+       git -C "/home/bella/Nixos-config" add "config/kitty"
+Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '/home/bella/Nixos-config#nixosConfigurations."Thinkpadt480s".config.system.build.toplevel' --no-link' returned non-zero exit status 1.
