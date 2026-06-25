@@ -5,10 +5,7 @@ Checking switch inhibitors... done
 activating the configuration...
 setting up /etc...
 reloading user units for bella...
-reloading the following user units: dbus-broker.service
 restarting the following user units: nixos-activation.service
 restarting sysinit-reactivation.target
-reloading the following units: dbus-broker.service
-restarting the following units: polkit.service
 the following new units were started: mandb.service, NetworkManager-dispatcher.service
 Done. The new configuration is /nix/store/m2pv3x0l3q47nxrmpl9mw4h68zq26cil-nixos-system-Thinkpadt480s-26.05.20260618.e8210c6
