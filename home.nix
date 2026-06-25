@@ -26,7 +26,7 @@
     # x11.enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
-    size = 16;
+    size = 24;
   };
 
   gtk = {
@@ -44,7 +44,7 @@
 
     font = {
       name = "Sans";
-      size = 11;
+      size = 12;
     };
   };
   home.file.".config/hypr".source = config/hypr;
