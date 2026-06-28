@@ -27,7 +27,11 @@
     desktopManager.plasma6.enable = true;
   };
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment.variables = {
+    QT_AUTO_SCREEN_SCALE_FACTOR = "1.5";
+    XCURSOR_SIZE = "24";
+    NIXOS_OZONE_WL = "1";
+  };
    
   services.displayManager.ly.enable = true;
 
