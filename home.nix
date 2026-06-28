@@ -24,7 +24,7 @@
   home.pointerCursor = {
     gtk.enable = true;
     # x11.enable = true;
-    name = "Adwaita-dark";
+    name = "adwaita-dark-theme";
     size = 24;
   };
 
