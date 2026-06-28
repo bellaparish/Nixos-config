@@ -83,6 +83,7 @@
      spotify
      unzip
      neovim
+     ripgrep
  ];
 
 
