@@ -24,7 +24,7 @@
   home.pointerCursor = {
     gtk.enable = true;
     # x11.enable = true;
-    package = pkgs.adwaita-cursor-theme;
+    package = pkgs.adwaita-icon-theme;
     name = "Awaita";
     size = 24;
   };
