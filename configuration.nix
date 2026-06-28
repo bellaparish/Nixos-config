@@ -82,7 +82,7 @@
      discord
      spotify
      unzip
-     nvim
+     neovim
  ];
 
 
