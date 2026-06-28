@@ -29,6 +29,7 @@
 
   environment.variables = {
     QT_AUTO_SCREEN_SCALE_FACTOR = "1.5";
+    XCURSOR_THEME = "adwaita";
     XCURSOR_SIZE = "24";
     NIXOS_OZONE_WL = "1";
   };
