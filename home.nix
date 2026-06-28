@@ -24,7 +24,7 @@
   home.pointerCursor = {
     gtk.enable = true;
     # x11.enable = true;
-    name = "Adwaita";
+    name = "Adwaita-dark";
     size = 24;
   };
 
