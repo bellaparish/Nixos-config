@@ -81,6 +81,7 @@
      swaynotificationcenter
      discord
      spotify
+     unzip
  ];
 
 
